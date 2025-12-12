@@ -1,12 +1,12 @@
 import React from "react";
 import "./project.css";
 import { motion } from "framer-motion";
-import pro1 from "../assets/project-img/rest-countries.jpg";
-import pro2 from "../assets/project-img/age-calculator-app.jpg";
-import pro3 from "../assets/project-img/contact-form.jpg";
-import pro4 from "../assets/project-img/Interactive-card-details-form.jpg";
-import pro5 from "../assets/project-img/todo-app.jpg";
-import pro6 from "../assets/project-img/Rocks-Paper-Scissors-.png";
+import pro1 from "../assets/project-img/single-price-grid-component-master.jpg";
+import pro2 from "../assets/project-img/recipe-page-main.jpg";
+import pro3 from "../assets/project-img/fylo-data-storage-component-master.jpg";
+import pro4 from "../assets/project-img/stats-preview-card-component-main.jpg";
+import pro5 from "../assets/project-img/order-summary-component-main.jpg";
+import pro6 from "../assets/project-img/3-column-preview-card-component-main.jpg";
 import pro7 from "../assets/project-img/Simon-Says-Game.png";
 import pro8 from "../assets/project-img/Calculator-app.jpg";
 function Project() {
@@ -14,42 +14,42 @@ function Project() {
     {
       img: pro1,
       liveDemo:
-        "https://dev-amna.github.io/REST-Countries-API-with-color-theme-switcher/",
-      code: "https://github.com/Dev-Amna/REST-Countries-API-with-color-theme-switcher",
+        "https://prudence2024.github.io/single-price-grid-component-master/",
+      code: "https://github.com/prudence2024/single-price-grid-component-master/",
     },
     {
       img: pro2,
-      liveDemo: "https://dev-amna.github.io/Age-calculator-app/",
-      code: "https://github.com/Dev-Amna/Age-calculator-app",
+      liveDemo: "https://prudence2024.github.io/recipe-page-main/",
+      code: "https://github.com/prudence2024/recipe-page-main",
     },
     {
       img: pro3,
-      liveDemo: "https://dev-amna.github.io/Contact-form/",
-      code: "https://github.com/Dev-Amna/Contact-form",
+      liveDemo: "https://prudence2024.github.io/fylo-data-storage-component-master/",
+      code: "https://github.com/prudence2024/fylo-data-storage-component-master",
     },
     {
       img: pro4,
-      liveDemo: "https://dev-amna.github.io/Interactive-card-details-form/",
-      code: "https://github.com/Dev-Amna/Contact-form",
+      liveDemo: "https://prudence2024-.github.io/stats-preview-card-component-main",
+      code: "https://github.com/prudence2024/stats-preview-card-component-main",
     },
     {
       img: pro5,
-      liveDemo: "https://dev-amna.github.io/Todo--App/",
-      code: "https://github.com/Dev-Amna/Todo--App",
+      liveDemo: "https://prudence2024.github.io/order-summary-component-main.jpg/",
+      code: "https://github.com/prudence2024/order-summary-component-main.jpg",
     },
     {
       img: pro6,
-      liveDemo: "https://dev-amna.github.io/Rocks-Paper-Scissors-/",
-      code: "https://github.com/Dev-Amna/Rocks-Paper-Scissors-",
+      liveDemo: "https://prudence2024.github.io/3-column-preview-card-component-main.jpg/",
+      code: "https://github.com/prudence2024/3-column-preview-card-component-main.jpg",
     },
     {
       img: pro7,
-      liveDemo: "https://dev-amna.github.io/Simon-Says-Game/",
-      code: "https://github.com/Dev-Amna/Simon-Says-Game",
+      liveDemo: "https://prudence2024.github.io/Tik-Tak-Toe-game/",
+      code: "https://github.com/prudence2024/Tik-Tak-Toe-game",
     }, {
       img: pro8,
-      liveDemo: "https://dev-amna.github.io/Calculator-app/",
-      code: "https://github.com/Dev-Amna/Calculator-app",
+      liveDemo: "https://prudence2024.github.io/digital_calculator/",
+      code: "https://github.com/prudence2024/digital_calculator",
     },
   ];
 
