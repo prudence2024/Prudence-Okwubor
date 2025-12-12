@@ -5,7 +5,7 @@ import skill2 from "../assets/css-3.png";
 import skill3 from "../assets/java-script.png";
 import skill4 from "../assets/react.png";
 import skill5 from "../assets/bootstrap.png";
-import skill6 from "../assets/nodejs.png";
+import skill6 from "../assets/figma.png";
 
 import "aos/dist/aos.css";
 
@@ -16,7 +16,7 @@ function Skill() {
     { name: "JavaScript", icon: skill3, desc: "Dynamic, interactive, and functional web experiences", level: 85 },
     { name: "React", icon: skill4, desc: "Efficient, component-based UI development", level: 88 },
     { name: "Bootstrap", icon: skill5, desc: "Responsive design with prebuilt UI components", level: 80 },
-    { name: "Node.js", icon: skill6, desc: "Scalable, server-side JavaScript runtime", level: 75 },
+    { name: "Figma", icon: skill6, desc: "Intuitive, deisgns with proper layout", level: 75 },
   ];
 
   const progressBarsRef = useRef([]);

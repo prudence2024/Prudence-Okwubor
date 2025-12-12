@@ -3,7 +3,7 @@ import "./Hero.css";
 import Typewriter from "typewriter-effect/dist/core";
 import { MyButton } from '../button/Button';
 import AOS from "aos";
-import heroImg from "../assets/amna.jpg"
+import heroImg from "../assets/Prudence.jpeg"
 
 function Hero() {
   let typeRef = useRef(null);
@@ -21,10 +21,10 @@ function Hero() {
       });
 
       typewriter
-        .typeString("Hey I am Amna Ashraf!")
+        .typeString("Hey I am Prudence Okwubor!")
         .pauseFor(1000)
         .deleteAll()
-        .typeString("A Passionate Web Developer")
+        .typeString("A Passionate Web Developer & Designer")
         .pauseFor(1000)
         .start();
     }
@@ -138,7 +138,7 @@ function Hero() {
           <h1 ref={typeRef} className="typewriter-text"></h1>
 
           <h2 data-aos="fade-up" data-aos-delay="200" data-aos-once="false">
-            Frontend Developer | React Enthusiast | Student
+            Frontend Developer | UI/UX designer | Student
           </h2>
 
           <p
@@ -147,8 +147,8 @@ function Hero() {
             data-aos-delay="400"
             data-aos-once="false"
           >
-            As a passionate front-end developer, I focus on creating modern, responsive,
-            and user-friendly websites that blend clean design with smooth functionality.
+            As a passionate front-end developer and desi, I focus on creating modern, responsive,
+            and user-friendly websites and designs that blend clean design with smooth functionality.
             My goal is to turn ideas into interactive <strong>experiences</strong> that inspire and engage.
           </p>
 
@@ -179,7 +179,7 @@ function Hero() {
 
         {/* Intro Image */}
         <div className="intro-img" data-aos="zoom-in-up" data-aos-once="false">
-          <img src={heroImg} alt="Amna Ashraf" />
+          <img src={heroImg} alt="Prudence Okwubor" />
         </div>
       </section>
     </div>

@@ -72,7 +72,7 @@ function Header() {
             >
               Dev
             </span>
-            -Amna
+            -Prudence
           </div>
 
           <div className="themeBtn">

@@ -3,7 +3,7 @@
 This is my personal portfolio built with React and Vite. It includes sections like Hero, About, Skills, Projects, and Contact. The design is responsive and uses smooth animations and effects to make it interactive and modern.
 
 ## Live Demo
-👉 https://amna-ashraf-r4iz.vercel.app/
+👉 https://Prudence-Okwubor-r4iz.vercel.app/
 
 ---
 

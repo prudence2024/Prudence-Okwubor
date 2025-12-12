@@ -51,9 +51,10 @@ function Contact() {
 
             <h2 data-aos="fade-up">Follow me on:</h2>
             <ul data-aos="zoom-in" data-aos-delay="200">
-              <li><a href="https://github.com/Dev-Amna" aria-label="GitHub"><i className="fab fa-github"></i></a></li>
-              <li><a href="https://www.linkedin.com/in/amna-ashraf1122/" aria-label="LinkedIn"><i className="fab fa-linkedin-in"></i></a></li>
-              <li><a href="https://www.youtube.com/@Dev-Amna" aria-label="youtube"><i className="fab fa-youtube"></i></a></li>
+              <li><a href="https://github.com/prudence2024" aria-label="GitHub"><i className="fab fa-github"></i></a></li>
+              <li><a href="https://www.linkedin.com/in/prudence-okwubor-7a9a27382/" aria-label="LinkedIn"><i className="fab fa-linkedin-in"></i></a></li>
+              <li><a href="https://www.x.com/@prudenceokwubor" aria-label="Twitter"><i className="fab fa-twitter"></i></a></li>
+              <li><a href="https://www.instagram.com/@prudenceokwubor" aria-label="Instagram"><i className="fab fa-instagram"></i></a></li>
             </ul>
           </div>
 

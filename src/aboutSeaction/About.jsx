@@ -1,8 +1,8 @@
 import React from 'react'
-import aboutImg from "../assets/amna.jpeg"
+import aboutImg from "../assets/Prudence.jpeg"
 import "./about.css"
 import { MyButton } from '../button/Button'
-import AmnaCV from "../assets/Amna_Ashraf_CV.pdf"
+import PrudenceCV from "../assets/Prudence_Okwubor_CV.pdf"
 
 function About() {
   return (
@@ -23,22 +23,19 @@ function About() {
           {/* Left side  */}
 
           <div className="about-img" data-aos="fade-right">
-            <img src={aboutImg} alt="Amna" />
+            <img src={aboutImg} alt="Prudence" />
           </div>
           {/* Right side  */}
           <div className="about-text" data-aos="fade-left" >
-            <p className='Amna_CV'>
+            <p className='Prudence_CV'>
               <h2>Who I am 😎</h2>
-              Hi! I’m <strong>Amna Ashraf</strong>, a passionate web developer who enjoys building clean, responsive, and user-friendly websites.
-              My journey began around 2022–2023, and over time I’ve grown more confident in creating projects that bring ideas to life on the web.
+              Hi, I’m  <strong>Prudence Okwubor</strong> — a web developer who enjoys turning simple ideas into smooth, functional, and visually appealing experiences on the internet. What started as curiosity has grown into a real passion for understanding how modern websites work and how great design and solid code come together.
 
-              Right now, I’m exploring <b>React</b>, moving toward backend development, and learning modern UI design as I work toward becoming a <strong>Full-Stack Developer</strong>.
-              My dream is to grow into a skilled Software Engineer who can handle both the creative and technical sides of applications.
+I’m currently focused on sharpening my front-end skills, exploring frameworks, and learning how to build interfaces that feel intuitive and clean. I’m also expanding into backend development so I can eventually work across the full stack and bring complete projects to life from start to finish.
 
-              Coding 💻 feels like a mix of art and problem-solving for me. Every project is a chance to experiment, learn something new, and sharpen my skills.
+What keeps me excited about tech is the constant growth. There’s always something new to learn, a better way to solve a problem, or a creative approach to try. Every challenge pushes me to improve and think differently.
 
-              Outside of coding, I love photography, experimenting with creative ideas, and exploring new technologies that spark curiosity 🚀.
-              I also enjoy spending time with friends, discovering fresh perspectives, and learning from every challenge I take on.
+When I’m not coding, I like exploring creative hobbies, checking out new tools, and finding inspiration in everyday things. I enjoy connecting with people, learning from their experiences, and building things that make a small difference in someone’s day.
             </p>
 
 
@@ -46,7 +43,7 @@ function About() {
             <MyButton style={{
               width: "200px",
               textDecoration: "none"
-            }} as="a" href={AmnaCV} download>
+            }} as="a" href={PrudenceCV} download>
               Download CV <i className="fa-solid fa-download"></i>
             </MyButton>
 
