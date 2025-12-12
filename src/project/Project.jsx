@@ -29,18 +29,18 @@ function Project() {
     },
     {
       img: pro4,
-      liveDemo: "https://prudence2024-.github.io/stats-preview-card-component-main",
+      liveDemo: "https://prudence2024.github.io/stats-preview-card-component-main",
       code: "https://github.com/prudence2024/stats-preview-card-component-main",
     },
     {
       img: pro5,
-      liveDemo: "https://prudence2024.github.io/order-summary-component-main.jpg/",
-      code: "https://github.com/prudence2024/order-summary-component-main.jpg",
+      liveDemo: "https://prudence2024.github.io/order-summary-component-main",
+      code: "https://github.com/prudence2024/order-summary-component-main",
     },
     {
       img: pro6,
-      liveDemo: "https://prudence2024.github.io/3-column-preview-card-component-main.jpg/",
-      code: "https://github.com/prudence2024/3-column-preview-card-component-main.jpg",
+      liveDemo: "https://prudence2024.github.io/3-column-preview-card-component-main/",
+      code: "https://github.com/prudence2024/3-column-preview-card-component-main",
     },
     {
       img: pro7,
