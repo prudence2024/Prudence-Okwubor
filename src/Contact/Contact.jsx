@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import emailjs from 'emailjs-com';
 import { MyButton } from '../button/Button';
 import { ToastContainer, toast } from 'react-toastify';
@@ -9,31 +9,68 @@ import './Contact.css';
 
 function Contact() {
   const [formData, setFormData] = useState({ name: '', email: '', msg: '' });
+  const [isSending, setIsSending] = useState(false); // State to handle loading/disabling button
+
+  // Initialize AOS when the component mounts
+  useEffect(() => {
+    AOS.init({ 
+      duration: 1000, 
+      once: true // Animation happens only once
+    });
+    AOS.refresh(); // Refresh AOS in case elements change
+  }, []);
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    emailjs.send(
-      "service_4v4s31d",
-      "template_6txi5km",
-      {
-        from_name: formData.name,
-        from_email: formData.email,
-        message: formData.msg,
-      },
-      "amliGqfnbMradbntO"
-    ).then(
-      () => {
-        toast.success("Message sent successfully!", { autoClose: 3000 });
-        setFormData({ name: "", email: "", msg: "" });
-      },
-      () => {
-        toast.error("Failed to send message. Please try again.", { autoClose: 3000 });
-      }
-    );
+
+    // Simple client-side check
+    if (!formData.name || !formData.email || !formData.msg) {
+        toast.warn("Please fill in all required fields.");
+        return;
+    }
+
+    setIsSending(true); // Start loading
+
+    try {
+      // 1. Send the Contact Message to yourself (Template ID: template_754q19a)
+      await emailjs.send(
+        "service_u725ndf", 
+        "template_754q19a", 
+        {
+          from_name: formData.name,
+          from_email: formData.email,
+          message: formData.msg,
+        },
+        "onM6EGtzqAueCRX53" 
+      );
+
+      // 2. Send the Auto-Reply to the user (Template ID: template_iyctzzx)
+      // This is executed only if the first message was sent successfully.
+      await emailjs.send(
+        "service_u725ndf", 
+        "template_iyctzzx", 
+        {
+          to_email: formData.email, // Sends the auto-reply back to the user
+          to_name: formData.name,   
+        },
+        "onM6EGtzqAueCRX53" 
+      );
+      
+      // Success actions
+      toast.success("Message sent successfully! Check your inbox for a confirmation.", { autoClose: 4000 });
+      setFormData({ name: "", email: "", msg: "" }); // Reset form
+
+    } catch (error) {
+      // Error action
+      console.error("EmailJS Error:", error);
+      toast.error("Failed to send message. Please try again.", { autoClose: 5000 });
+    } finally {
+      setIsSending(false); // Stop loading regardless of success or failure
+    }
   };
 
   return (
@@ -53,8 +90,8 @@ function Contact() {
             <ul data-aos="zoom-in" data-aos-delay="200">
               <li><a href="https://github.com/prudence2024" aria-label="GitHub"><i className="fab fa-github"></i></a></li>
               <li><a href="https://www.linkedin.com/in/prudence-okwubor-7a9a27382/" aria-label="LinkedIn"><i className="fab fa-linkedin-in"></i></a></li>
-              <li><a href="https://www.x.com/@prudenceokwubor" aria-label="Twitter"><i className="fab fa-twitter"></i></a></li>
-              <li><a href="https://www.instagram.com/@prudenceokwubor" aria-label="Instagram"><i className="fab fa-instagram"></i></a></li>
+              <li><a href="https://www.x.com/prudenceokwubor" aria-label="Twitter"><i className="fab fa-twitter"></i></a></li>
+              <li><a href="https://www.instagram.com/prudenceokwubor" aria-label="Instagram"><i className="fab fa-instagram"></i></a></li>
             </ul>
           </div>
 
@@ -103,7 +140,13 @@ function Contact() {
               </div>
 
               <div data-aos-delay="400">
-                <MyButton type="submit" className="submit-btn">Send</MyButton>
+                <MyButton 
+                  type="submit" 
+                  className="submit-btn"
+                  disabled={isSending} // Disable button while sending
+                >
+                  {isSending ? 'Sending...' : 'Send Message'}
+                </MyButton>
               </div>
             </div>
           </form>
