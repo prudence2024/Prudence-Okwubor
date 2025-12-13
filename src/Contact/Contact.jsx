@@ -49,13 +49,14 @@ function Contact() {
       );
 
       // 2. Send the Auto-Reply to the user (Template ID: template_iyctzzx)
-      // This is executed only if the first message was sent successfully.
+      // CORRECTED PAYLOAD to ensure {{from_name}} and {{message}} variables are passed.
       await emailjs.send(
         "service_u725ndf", 
         "template_iyctzzx", 
         {
-          to_email: formData.email, // Sends the auto-reply back to the user
-          to_name: formData.name,   
+          to_email: formData.email,  // Recipient email (used in EmailJS Settings)
+          from_name: formData.name,  // Used in auto-reply body: Hi {{from_name}}
+          message: formData.msg,     // Used in auto-reply body: "Your message: {{message}}"
         },
         "onM6EGtzqAueCRX53" 
       );
