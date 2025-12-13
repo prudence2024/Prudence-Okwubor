@@ -70,9 +70,9 @@ function Header() {
                 WebkitTextFillColor: "transparent",
               }}
             >
-              Dev
+              Prudence
             </span>
-            -Prudence
+           
           </div>
 
           <div className="themeBtn">

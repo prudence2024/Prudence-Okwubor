@@ -1,7 +1,7 @@
 .contact-section {
   text-align: center;
   min-height: 100vh;
-  width: 100%;
+  /* width: 100%; */
   display: flex;
   flex-direction: column;   
   justify-content: flex-start; 
@@ -95,6 +95,12 @@
   width: 100%;
   height: 100%;
 }
+form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 350px;
+}
 
 /* Form Content */
 .formContent {
@@ -183,6 +189,7 @@
   .follow ul {
     justify-content: center;
   }
+ 
   
   .formContent {
     padding: 1.5rem;
